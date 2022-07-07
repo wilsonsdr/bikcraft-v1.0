@@ -21,6 +21,43 @@
   border-radius: 4px;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 0px 60px;
+}
+
+.introducao {
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  background-color: #fff;
+  text-align: right;
+  padding: 50px;
+}
+
+.introducao-titulo {
+  font-size: 32px;
+}
+
+.introducao-botao {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--botoes);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  place-self: flex-end;
+}
+
+.imagem {
+  display: grid;
+  object-fit: cover;
+  object-position: top right;
+  height: 100%;
+}
+
 /* configurações gerais */
 :root {
   --cor-primaria: #f7f7f7;
