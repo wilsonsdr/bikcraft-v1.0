@@ -58,6 +58,37 @@
   height: 100%;
 }
 
+.subtitulo {
+  display: grid;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 50px;
+  color: var(--cor-secundaria);
+  background: url("/img/onda.svg");
+  align-self: center;
+}
+
+.vantagens {
+  display: grid;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+
+.item p {
+  grid-column: 2;
+}
+
+.item:nth-child(odd) {
+  background-color: var(--cor-primaria);
+}
+
 /* configurações gerais */
 :root {
   --cor-primaria: #f7f7f7;
