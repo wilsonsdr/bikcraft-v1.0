@@ -1,3 +1,26 @@
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.header-menu a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
 /* configurações gerais */
 :root {
   --cor-primaria: #f7f7f7;
