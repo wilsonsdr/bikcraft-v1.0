@@ -36,7 +36,7 @@
   padding: 50px;
 }
 
-.introducao-titulo {
+#introducao-titulo {
   font-size: 32px;
 }
 
@@ -78,6 +78,7 @@
   grid-template-columns: auto 1fr;
   padding: 20px;
   gap: 20px;
+  border: 4px solid transparent;
 }
 
 .item p {
@@ -165,7 +166,7 @@ img {
   .subtitulo {
     grid-row: 3;
   }
-  .subtitulo h2 {
+  .subtitulo {
     font-size: 3rem;
   }
   .vantagens {
