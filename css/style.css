@@ -15,15 +15,15 @@
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--terciaria);
-  background-color: var(--secundaria);
+  color: var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
   padding: 1rem 2rem;
   border-radius: 4px;
   border: 3px solid transparent;
 }
 
 .header-menu a:hover {
-  border: 3px solid var(--destaque);
+  border: 3px solid var(--cor-destaque);
 }
 
 .container {
@@ -36,7 +36,7 @@
   display: grid;
   gap: 20px;
   place-content: center;
-  background-color: var(--secundaria);
+  background-color: var(--cor-secundaria);
   text-align: right;
   padding: 50px;
   position: relative;
@@ -48,18 +48,18 @@
   position: absolute;
   width: 64px;
   height: 4px;
-  background-color: var(--destaque);
+  background-color: var(--cor-destaque);
   top: 30px;
   right: -30px;
 }
 
 #introducao-titulo {
   font-size: 32px;
-  color: var(--terciaria);
+  color: var(--cor-terciaria);
 }
 
 .introducao-descricao {
-  color: var(--terciaria);
+  color: var(--cor-terciaria);
 }
 
 .introducao-botao {
@@ -67,14 +67,14 @@
   text-transform: uppercase;
   color: var(--terciaria);
   font-weight: bold;
-  background-color: var(--destaque);
+  background-color: var(--cor-destaque);
   padding: 1rem 2rem;
   border-radius: 4px;
   place-self: flex-end;
 }
 
 .introducao-botao:hover {
-  background-color: var(--destaque2);
+  background-color: #900;
   color: #fff;
 }
 
@@ -90,7 +90,7 @@
   text-transform: uppercase;
   text-align: right;
   padding: 50px;
-  color: var(--quartenaria);
+  color: var(--cor-quartenaria);
   background: url("/img/onda.svg");
   align-self: center;
 }
@@ -98,7 +98,7 @@
 .vantagens {
   display: grid;
   padding: 50px;
-  background-color: var(--secundaria);
+  background-color: var(--cor-secundaria);
 }
 
 .item {
@@ -107,11 +107,11 @@
   padding: 20px;
   gap: 20px;
   border-left: 4px solid transparent;
-  color: var(--terciaria);
+  color: var(--cor-terciaria);
 }
 
 .item:hover {
-  border-left: 4px solid var(--destaque);
+  border-left: 4px solid var(--cor-destaque);
 }
 
 .item p {
@@ -119,15 +119,16 @@
 }
 
 .item:nth-child(odd) {
-  background-color: var(--primaria);
+  background-color: var(--cor-primaria);
 }
 
 .footer {
   padding: 50px;
-  background-color: var(--secundaria);
+  background-color: var(--cor-secundaria);
   width: 100%;
   text-align: center;
   font-size: 20px;
+  color: var(--cor-terciaria);
 }
 
 /* configurações gerais */
@@ -142,7 +143,7 @@ body {
   justify-items: center;
   gap: 60px;
   margin-top: 60px;
-  background-color: var(--primaria);
+  background-color: var(--cor-primaria);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -223,22 +224,20 @@ img {
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --primaria: #f7f7f7;
-    --secundaria: #fff;
-    --terciaria: #000;
-    --quartenaria: #c6c6c6;
-    --destaque: #ee2211;
-    --destaque2: #900;
+    --cor-primaria: #f7f7f7;
+    --cor-secundaria: #fff;
+    --cor-terciaria: #000;
+    --cor-quartenaria: #c6c6c6;
+    --cor-destaque: #ee2211;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primaria: #1e1e1e;
-    --secundaria: #252526;
-    --terciaria: #f7f7f7;
-    --quartenaria: #c6c6c6;
-    --destaque: #ee2211;
-    --destaque2: #900;
+    --cor-primaria: #1e1e1e;
+    --cor-secundaria: #252526;
+    --cor-terciaria: #f7f7f7;
+    --cor-quartenaria: #c6c6c6;
+    --cor-destaque: #ee2211;
   }
 }
